@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Slider from "../components/Slider";
 
 export default function Home() {
@@ -8,7 +9,10 @@ export default function Home() {
           <div className="h-1/2">
             <Slider />
           </div>
-          <div className="h-1/2">Some text</div>
+          <div className="h-1/2">
+            <Link href={"/another-route"}>Click here</Link>
+            <Link href={"/another-route/kuch-bhi"}>Click here dynamic</Link>
+          </div>
         </div>
         <div className="w-1/2">Content 2</div>
       </div>
